@@ -123,6 +123,7 @@ export const LikeWrapper = styled.div`
     display: flex;
     flex-direction : column;
     margin-top: 120px;
+    margin-bottom: 50px;
 `
 export const LikeTitle = styled.div`
     font-weight: bold;
@@ -131,4 +132,74 @@ export const LikeTitle = styled.div`
 export const LikeSubTitle = styled.div`
     margin-top: 10px;
     font-size: 18px;
+`
+
+export const LikeContainers = styled.div`
+    margin-top: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    backgrond-color: red;
+`
+export const LikeContainer = styled.div`
+    width: 345px;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+`
+export const LikeImage = styled.img`
+    width: 338px;
+    height: 250px;
+    border-radius: 8px;
+`
+export const LikeTitleWrapper = styled.div`
+    display: flex;
+    flex-direction: row
+`
+export const LikeName = styled.div`
+    font-weight: bold;
+    font-size: 18px;
+`
+export const LikeContent = styled.div`
+    font-size: 15px;
+    color: gray
+`
+export const DayMoney = styled.div`
+    font-weight: bold;
+    font-size: 18px;
+`
+export const TotalMoney = styled.div`
+    color: gray;
+    font-size: 15px;
+`
+
+export const LikeButton = styled.button`
+    width: 130px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+`
+export const QueWrapper = styled.div`
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+`
+export const QueLeft = styled.div`
+    width: 770px;
+    font-size: 45px;
+    font-weight: bold;
+`
+export const QueRight = styled.div`
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+`
+export const QueTitle = styled.div`
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
 `
