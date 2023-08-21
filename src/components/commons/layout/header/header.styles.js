@@ -8,4 +8,8 @@ export const Wrapper = styled.div`
  left: 0;
  z-index: 1;
  background-color: blue;
+
+ @media (max-width: 768px) {
+    
+ }
 `
