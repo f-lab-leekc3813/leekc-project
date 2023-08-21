@@ -1,0 +1,20 @@
+{
+    "info" : [
+        {
+            "index" : "0",
+            "image" : "https://a0.muscache.com/im/pictures/7c7ccb34-a563-4f25-9fba-e4a46e2dbc3a.jpg?im_w=480",
+            "title" : "여행 계획 변동 가능성에 대비하세요",
+            "content" : "환불 정책이 유연한 숙소를 예약하면 여행 계획이 변경되어도 쉽게 재예약할 수 있습니다."
+        },{
+            "index" : "1",
+            "image" : "https://a0.muscache.com/im/pictures/d51be571-b8cf-4379-8d3f-7c5e56c9def5.jpg?im_w=480",
+            "title" : "운영 중인 숙소 7백만 개 이상",
+            "content" : "220개 이상의 국가와 지역의 휴양지를 찾은 10억 명 이상의 게스트 중 한 명이 되어보세요."
+        },{
+            "index" : "2",
+            "image" : "https://a0.muscache.com/im/pictures/a52e81a9-e390-4e74-b197-1aeeffd0e5ab.jpg?im_w=480",
+            "title" : "최적화된 숙소 검색을 위한 100개 이상의 필터",
+            "content" : "원하는 가격대, 객실 수, 기타 주요 편의시설을 선택하여 나에게 딱 맞는 숙소를 찾아보세요."
+        }
+    ]
+}

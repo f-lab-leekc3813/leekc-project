@@ -6,10 +6,11 @@ export const Wrapper = styled.div`
     height:80px;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     background-color: white;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid lightgray;
 `
 
 export const Container = styled.div`
@@ -20,6 +21,7 @@ export const ImgContainer = styled.div`
     display:flex;
     justify_content: center;
     align-items:center;
+    cursor: pointer;
 `
 
 export const LogoImg = styled.img`
@@ -39,4 +41,5 @@ export const InfoHref = styled.a`
     font-weight: bold;
     text-decoration: underline;
     margin-left: 15px;
+    cursor: pointer;
 `

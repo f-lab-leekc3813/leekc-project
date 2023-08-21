@@ -1,72 +1,9 @@
+import MainPage from "../src/components/commons/page/main/main.container";
+
 export default function Home() {
   return (
     <>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-      <div>하이</div>
-
+      <MainPage />
     </>
   )
 }
