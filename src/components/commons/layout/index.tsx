@@ -1,9 +1,9 @@
 import {useRouter} from "next/router";
-import LayoutHeader from './header';
-import LayoutNavigation from './navigation';
-import LayoutFooter from './footer';
+import LayoutHeader from './header/header.container';
+import LayoutNavigation from './navigation/navigation.container';
+import LayoutFooter from './footer/footer.container';
 
-export default function Layout(props) {
+export default function Layout(props: any) {
     const router = useRouter();
     
     console.log(router.asPath);
