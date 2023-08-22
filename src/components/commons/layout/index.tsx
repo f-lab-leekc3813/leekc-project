@@ -4,11 +4,13 @@ import LayoutNavigation from './navigation/navigation.container';
 import LayoutFooter from './footer/footer.container';
 
 const HIDDEN_NAVIGATION = [
-    "/"
+    "/",
+    "/login"
 ]
 
 const HIDDEN_FOOTER = [
-    "/"
+    "/",
+    "/login"
 ]
 
 export default function Layout(props: any) {
