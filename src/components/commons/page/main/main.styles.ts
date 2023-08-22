@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 `
 export const Container = styled.div`
     width: 1440px;
@@ -196,10 +197,34 @@ export const QueRight = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 22px;
-    border-bottom: 1px solid gray;
 `
 export const QueTitle = styled.div`
     display: flex;
     flex-direction: row;
     cursor: pointer;
+`
+
+export const FooterWrapper = styled.div`
+    width: 100%;
+    height: 130px;
+    background-color: #F7F7F7ff;
+    display: flex;
+    justify-content: center;
+`
+
+export const FooterContainer = styled.div`
+    width:1440px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+`
+
+export const FooterTop = styled.div`
+    padding-top: 15px;
+    height: 60px;
+`
+
+export const FooterBottom = styled.div`
+    font-size: 10px;
+    color : gray;
 `

@@ -28,6 +28,7 @@ export default function Question(props: any) {
             {click &&<S.Content>
                 {props.data.content}
             </S.Content>}
+            <hr />
         </S.Wrapper>
     )
 }
