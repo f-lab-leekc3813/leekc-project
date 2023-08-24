@@ -1,10 +1,14 @@
 import { useState,useEffect, ChangeEvent } from "react";
 import { useRouter } from "next/router";
+import {useRecoilState} from 'recoil';
 import axios from "axios";
 
+import { loginState } from "../../../../store/recoilAtoms";
 import LoginPageUI from "./login.presenter";
 
 export default function LoginPage() {
+    const [isLogged, setIsLogged] = useRecoilState(loginState);
+
     const router = useRouter();
 
     const [login,setLogin] = useState(false);
@@ -58,6 +62,7 @@ export default function LoginPage() {
           const token = response.data.token;
           localStorage.setItem('token', token);
           
+          setIsLogged(true)
           console.log('Login success:', response);
           router.push('/')
         }catch(error) {

@@ -1,3 +1,5 @@
+import {RecoilRoot} from 'recoil';
+
 import Layout from '../src/components/commons/layout';
 import '../styles/globals.css';
 
@@ -8,11 +10,11 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <>
+    <RecoilRoot>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </RecoilRoot>
   );
 };
 
