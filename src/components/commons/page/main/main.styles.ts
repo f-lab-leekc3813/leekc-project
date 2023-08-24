@@ -7,14 +7,26 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
 `
 export const Container = styled.div`
     width: 1440px;
+
+    @media (max-width: 1440px) {
+        width: 100%;
+        max-width: 1440px;
+      }
+    @media (max-width: 768px) {
+        max-width: 768px;
+    }
 `
 export const SearchWrapper = styled.div`
     height: 543px;
     position: relative;
     border-radius: 8px;
+    @media (max-width: 768px) {
+        max-width: 768px;
+    }
 `
 
 export const SearchContainer = styled.div`
@@ -93,6 +105,10 @@ export const InfoWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 3rem;
+    @media (max-width: 768px){
+        display:flex;
+        flex-direction: column;
+    }
 `
 
 export const InfoContainer = styled.div`
@@ -141,6 +157,9 @@ export const LikeContainers = styled.div`
     flex-wrap: wrap;
     width: 1440px;
     backgrond-color: red;
+    @media (max-width:768px) {
+        width: 768px;
+    }
 `
 export const LikeContainer = styled.div`
     width: 345px;
@@ -187,6 +206,9 @@ export const QueWrapper = styled.div`
     width: 1440px;
     display: flex;
     flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `
 export const QueLeft = styled.div`
     width: 770px;
@@ -217,6 +239,7 @@ export const FooterContainer = styled.div`
     height: 130px;
     display: flex;
     flex-direction: column;
+    
 `
 
 export const FooterTop = styled.div`

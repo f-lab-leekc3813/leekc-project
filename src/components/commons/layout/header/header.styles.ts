@@ -16,6 +16,14 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
     width : 1440px;
     display:flex;
+    @media (max-width: 1440px) {
+        width: 100%;
+        max-width: 1440px;
+      }
+    
+    @media (max-width: 768px) {
+      max-width: 768px;
+    }
 `
 export const ImgContainer = styled.div`
     display:flex;
@@ -26,7 +34,7 @@ export const ImgContainer = styled.div`
 
 export const LogoImg = styled.img`
     width: 118px;
-    height: 30px;    
+    height: 30px;  
 `
 
 export const InfoContainer = styled.div`
