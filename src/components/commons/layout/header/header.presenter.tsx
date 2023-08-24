@@ -1,6 +1,7 @@
 import * as S from './header.styles';
+import { IHeaderUIProps } from './header.types';
 
-export default function HeaderUI(props: any) {
+export default function HeaderUI(props: IHeaderUIProps): JSX.Element {
     return (
             <S.Wrapper>
                 <S.Container >

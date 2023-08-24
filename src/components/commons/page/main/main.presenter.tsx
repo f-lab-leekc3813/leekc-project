@@ -5,10 +5,11 @@ import { DatePicker, Space } from 'antd';
 import * as S from './main.styles';
 import DUMMY_DATA from '../../../../data/mainData.json';
 import Question from '../../ui/question';
+import { IMainPageUIProps } from './main.types';
 
 const { RangePicker } = DatePicker;
 
-export default function MainPageUI(props:any) {
+export default function MainPageUI(props:IMainPageUIProps) {
 
     return(
         <S.Wrapper>

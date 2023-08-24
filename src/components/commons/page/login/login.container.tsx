@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect, ChangeEvent } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 
@@ -17,11 +17,11 @@ export default function LoginPage() {
     const [isValidPassword, setIsValidPassword] = useState(true);
     const [isValidNickName, setIsValidNickName] = useState(true);
 
-    const onClickSignUp = ()=> {
+    const onClickSignUp = () : void=> {
         setLogin((prev) => !prev)
     }
 
-    const onClickSign = async ()=> {
+    const onClickSign = async () : Promise<void> => {
         if (isValidPassword && isValidEmail && isValidNickName) {
             try{
               const response = await axios.post('/api/signup', {
@@ -49,7 +49,7 @@ export default function LoginPage() {
           }
     }
 
-    const onClickLogin = async ()=> {
+    const onClickLogin = async () : Promise<void>=> {
         try{
           const response = await axios.post('/api/login', {
             email,
@@ -65,33 +65,33 @@ export default function LoginPage() {
         }
     }
 
-    const validateEmail = (email) => {
+    const validateEmail = (email: string) : boolean => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
       };
     
-    const validatePassword = (password) => {
+    const validatePassword = (password: string) : boolean => {
       return password.length >= 8;
     };
 
-    const validateNickName = (nickName) => {
+    const validateNickName = (nickName: string) : boolean => {
         return nickName.length >= 3; 
       };
 
 
-    const handleEmailChange = (event) => {
+    const handleEmailChange = (event: ChangeEvent<HTMLInputElement>) : void => {
         const newEmail = event.target.value;
         setEmail(newEmail);
         setIsValidEmail(validateEmail(newEmail));
     };
     
-    const handlePasswordChange = (event) => {
+    const handlePasswordChange = (event: ChangeEvent<HTMLInputElement>) : void => {
         const newPassword = event.target.value;
         setPassword(newPassword);
         setIsValidPassword(validatePassword(newPassword));
     };
 
-    const handleNickNameChange = (event) => {
+    const handleNickNameChange = (event: ChangeEvent<HTMLInputElement>) : void => {
         const newNickName = event.target.value;
         setNickName(newNickName);
         setIsValidNickName(validateNickName(newNickName));

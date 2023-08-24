@@ -1,7 +1,7 @@
 import {  useRouter } from "next/router";
 import HeaderUI from "./header.presenter";
 
-export default function LayoutHeader() {
+export default function LayoutHeader(): JSX.Element {
     const router = useRouter();
 
     const onClickLogin = () => {

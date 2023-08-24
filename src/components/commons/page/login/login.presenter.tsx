@@ -1,6 +1,7 @@
 import * as S from './login.styles';
+import { ILoginPageUIProps } from './login.types';
 
-export default function LoginPageUI(props: any) {
+export default function LoginPageUI(props: ILoginPageUIProps) {
 
 
     return(

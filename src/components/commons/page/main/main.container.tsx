@@ -2,7 +2,7 @@ import MainPageUI from "./main.presenter";
 
 import dayjs from 'dayjs';
 import type { Dayjs } from 'dayjs';
-import type { TimeRangePickerProps } from 'antd';
+import { IMainPageUIProps } from "./main.types";
 
 export default function MainPage() {1
 
@@ -15,12 +15,13 @@ export default function MainPage() {1
         }
       };
 
-      const rangePresets: TimeRangePickerProps['presets'] = [
-        { label: 'Last 7 Days', value: [dayjs().add(-7, 'd'), dayjs()] },
-        { label: 'Last 14 Days', value: [dayjs().add(-14, 'd'), dayjs()] },
-        { label: 'Last 30 Days', value: [dayjs().add(-30, 'd'), dayjs()] },
-        { label: 'Last 90 Days', value: [dayjs().add(-90, 'd'), dayjs()] },
-      ];
+      
+    const rangePresets: IMainPageUIProps['rangePresets'] = [
+      { label: 'Last 7 Days', value: [dayjs().subtract(7, 'day'), dayjs()] },
+      { label: 'Last 14 Days', value: [dayjs().subtract(14, 'day'), dayjs()] },
+      { label: 'Last 30 Days', value: [dayjs().subtract(30, 'day'), dayjs()] },
+      { label: 'Last 90 Days', value: [dayjs().subtract(90, 'day'), dayjs()] },
+    ];
 
     return(
         <MainPageUI

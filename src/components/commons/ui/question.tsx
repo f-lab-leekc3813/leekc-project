@@ -2,12 +2,13 @@ import {DownOutlined, UpOutlined} from "@ant-design/icons";
 import {useState} from "react";
 
 import * as S from "./question.css"
+import { IQuestionProps } from "../page/main/main.types";
 
-export default function Question(props: any) {
+export default function Question(props: IQuestionProps) {
 
     const [click, setClick] =  useState(false)
 
-    const onClickTitle = ()=> {
+    const onClickTitle = () : void=> {
         setClick((prev) => !prev)
     }
     return(
