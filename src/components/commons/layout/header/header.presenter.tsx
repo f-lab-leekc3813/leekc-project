@@ -13,7 +13,7 @@ export default function HeaderUI(props: IHeaderUIProps): JSX.Element {
                             <S.InfoHref onClick={props.handleLogout}>로그아웃</S.InfoHref> :
                             <S.InfoHref onClick={props.onClickLogin}>가입하기</S.InfoHref>
                         }
-                        <S.InfoHref>당신의 공간을 에어비앤비하세요</S.InfoHref>
+                        <S.InfoHref onClick = {props.moveCategories}>당신의 공간을 에어비앤비하세요</S.InfoHref>
                     </S.InfoContainer>
                 </S.Container>
             </S.Wrapper>

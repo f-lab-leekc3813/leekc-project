@@ -1,4 +1,4 @@
-import { useState,useEffect, ChangeEvent } from "react";
+import { useState, ChangeEvent } from "react";
 import { useRouter } from "next/router";
 import {useRecoilState} from 'recoil';
 import axios from "axios";
@@ -61,7 +61,7 @@ export default function LoginPage() {
           });
           const token = response.data.token;
           localStorage.setItem('token', token);
-          
+          console.log('토큰:',token)
           setIsLogged(true)
           console.log('Login success:', response);
           router.push('/')

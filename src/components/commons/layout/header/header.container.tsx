@@ -24,12 +24,17 @@ export default function LayoutHeader(): JSX.Element {
         console.log('클릭')
     }
 
+    const moveCategories = () : void => {
+        router.push("/categories")
+    }
+
     return (
         <HeaderUI
             onClickLogin = {onClickLogin}
             onClickMain = {onClickMain}
             handleLogout = {handleLogout}
             isLogged = {isLogged}
+            moveCategories = {moveCategories}
          />
     )
 }

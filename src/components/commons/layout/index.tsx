@@ -4,13 +4,11 @@ import LayoutNavigation from './navigation/navigation.container';
 import LayoutFooter from './footer/footer.container';
 
 const HIDDEN_NAVIGATION = [
-    "/",
-    "/login"
+    "/categories"
 ]
 
 const HIDDEN_FOOTER = [
-    "/",
-    "/login"
+    "/categories"
 ]
 
 export default function Layout(props: any) {
@@ -22,9 +20,9 @@ export default function Layout(props: any) {
     return(
         <>
             <LayoutHeader />
-            {!isHiddenNavigation && <LayoutNavigation />}
+            {isHiddenNavigation && <LayoutNavigation />}
             <div>{props.children}</div>
-            {!isHiddenFooter && <LayoutFooter />}
+            {isHiddenFooter && <LayoutFooter />}
         </>
     )
 }
